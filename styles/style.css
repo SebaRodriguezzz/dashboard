@@ -55,3 +55,45 @@ html {
     grid-template-columns: 3fr 1fr;
 }
 
+
+.content .projects {
+    display: grid;
+    grid-template: 0.1fr repeat(3, 1fr) / repeat(2, 3fr);
+    grid-column: 1;
+}
+
+
+.content .projects .project {
+    border: solid black 2px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.2fr ;
+}
+
+.project .p-content .title-pro {
+    grid-row: 1;
+}
+
+.project .p-content .text {
+    grid-row: 2 / 3;
+}
+
+.project .buttons {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: end;
+}
+
+.main .announcements {
+    grid-column: 2;
+    grid-row: 2 / 3;
+}
+
+.title-an {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.main .trending {
+    grid-column: 2;
+    grid-row: 3 / 4;
+}
