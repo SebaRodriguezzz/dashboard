@@ -1,12 +1,12 @@
-html {
+html, body {
     margin: 0;
+    height: 100%;
 }
 
 .container {
     display: grid;
     grid-template: 1.5fr 26fr / 1fr 5fr;
     border: solid black 2px;
-
 }
 
 .sidebar {
@@ -41,7 +41,6 @@ html {
     border: solid black 2px;
     grid-column: 2;
     grid-row: 2 / 3;
-    height: 600px;
 }
 
 .main .topbar {
@@ -54,6 +53,8 @@ html {
 .main .content-container {
     display: grid;
     grid-template:  0.1fr 400px 400px/ 3fr 1fr;
+    gap: 25px;
+    padding: 20px;
 }
 
 
@@ -61,6 +62,8 @@ html {
     display: grid;
     grid-template: 0.1fr repeat(3, 1fr) / repeat(2, 3fr);
     grid-column: 1;
+    grid-row: 2 / 4;
+    gap: 25px;
 }
 
 
@@ -68,6 +71,7 @@ html {
     border: solid black 2px;
     display: grid;
     grid-template-rows: 0.1fr 0.2fr ;
+    width: 400px;
 }
 
 .project .p-content .title-pro {
@@ -87,6 +91,7 @@ html {
 .main .announcements {
     grid-column: 2;
     grid-row: 2 / 3;
+    border: solid black 2px;
 }
 
 .title-an {
@@ -97,4 +102,17 @@ html {
 .main .trending {
     grid-column: 2;
     grid-row: 3 / 4;
+  
+}
+
+.trending .title {
+    margin: 25px 0px 25px 0px;
+}
+
+.trending .users {
+    border: solid black 2px;
+}
+
+h4 {
+    margin: 0 ;
 }
